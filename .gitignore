@@ -4,3 +4,10 @@
 /src/main/java/modelo/Usuario.java
 /src/test/java/util/DaoProducaoTest.java
 /src/test/java/util/DaoVacaTest.java
+/src/main/java/com/ProducaoIncluirControle.java
+/src/main/java/com/ProducaoListarPorVaca.java
+/src/main/java/com/LoginControle.java
+/src/main/resources/com/producaoIncluir.fxml
+/src/main/resources/com/producaoListarPorVaca.fxml
+/src/main/resources/com/vacaAlterar.fxml
+/src/main/java/com/VacaAlterarControle.java

@@ -38,13 +38,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="481.0" prefWidth="834.0" stylesheets="@estilos.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.MenuControle">
   <children>
-    <MenuBar VBox.vgrow="NEVER">
+    <MenuBar styleClass="txt18" VBox.vgrow="NEVER">
       <menus>
         <Menu mnemonicParsing="false" text="Vacas">
           <items>
-            <MenuItem mnemonicParsing="false" text="Nova" />
+            <MenuItem mnemonicParsing="false" onAction="#vacaIncluir" text="Nova" />
+                  <MenuItem mnemonicParsing="false" onAction="#vacaAlterar" text="Alterar" />
           </items>
         </Menu>
         <Menu mnemonicParsing="false" text="Usuários">
@@ -54,13 +55,18 @@
         </Menu>
         <Menu mnemonicParsing="false" text="Produção">
           <items>
-            <MenuItem mnemonicParsing="false" text="Incluir" />
+            <MenuItem mnemonicParsing="false" onAction="#producaoIncluir" text="Incluir" />
                   <MenuItem mnemonicParsing="false" text="Listar por período" />
-                  <MenuItem mnemonicParsing="false" text="Listar por vaca " />
+                  <MenuItem mnemonicParsing="false" onAction="#producaoListarPorVaca" text="Listar por vaca " />
           </items>
         </Menu>
+            <Menu mnemonicParsing="false" text="Sair">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#sair" text="Fechar" />
+               </items>
+            </Menu>
       </menus>
     </MenuBar>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS" />
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="-1.0" stylesheets="@estilos.css" VBox.vgrow="ALWAYS" />
   </children>
 </VBox>
