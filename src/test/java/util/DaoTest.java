@@ -1,10 +1,6 @@
 
 package util;
 
-import java.util.List;
-import modelo.Vaca;
-import org.junit.jupiter.api.Test;
-
 /**
  *
  * @author Usuário

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ProducaoController">
+   <children>
+      <TextField fx:id="txtBrinco" layoutX="225.0" layoutY="119.0" promptText="Brinco" />
+      <TextField fx:id="txtQuantidade" layoutX="225.0" layoutY="174.0" promptText="Quantia produzida" />
+      <DatePicker fx:id="dateData" layoutX="212.0" layoutY="213.0" promptText="Data da produção" />
+      <Button fx:id="btnSalvar" layoutX="212.0" layoutY="275.0" mnemonicParsing="false" text="Salvar" />
+      <Button fx:id="btnVoltar" layoutX="300.0" layoutY="275.0" mnemonicParsing="false" text="Voltar" />
+   </children>
+</AnchorPane>

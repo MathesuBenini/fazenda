@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ProducaoListarPorVacaController">
+   <children>
+      <TextField fx:id="txtBrinco" layoutX="226.0" layoutY="40.0" promptText="Brinco" />
+      <ComboBox fx:id="cmbMes" layoutX="225.0" layoutY="100.0" prefWidth="150.0" promptText="mes" />
+      <ComboBox fx:id="cmbAno" layoutX="225.0" layoutY="159.0" prefWidth="150.0" promptText="ano" />
+      <TableView fx:id="tableProducao" layoutX="225.0" layoutY="216.0" prefHeight="145.0" prefWidth="150.0">
+        <columns>
+          <TableColumn fx:id="colData" prefWidth="75.0" text="C1" />
+          <TableColumn fx:id="colQuantidade" prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnVoltar" layoutX="408.0" layoutY="159.0" mnemonicParsing="false" text="Consultar" />
+      <Button layoutX="486.0" layoutY="159.0" mnemonicParsing="false" text="Voltar" />
+   </children>
+</AnchorPane>
